@@ -23,7 +23,14 @@
 
 <label for="email">メール</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-<input type=hidden name="recordType" value="0120o000001VDgs">
+<input type=hidden name="recordType" value="0120o000001ZN7a">
+
+<!--
+</option><option value="0120o000001ZN7V">Osaka</option>
+<option value="0120o000001ZN7a">Other</option>
+<option value="0120o000001ZN7Q">Tokyo</option>
+<option value="0120o000001VDgs">US</option>
+// -->
 
 <input type="submit" name="submit">
 
