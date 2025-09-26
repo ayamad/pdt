@@ -28,6 +28,34 @@ piHostname = 'ayk2021.jp-edi.page';
   <body>
 こんにちは<br>
 
-    
-	</body>
+	      <form>
+        <label for="company_name">会社名:</label>
+        <input type="text" id="company_name" name="company">
+
+        <br><br>
+
+//        <input type="submit" value="送信">
+    </form>    
+
+	  <script type='text/javascript'>
+		  // ページの読み込みが完了したら実行
+window.onload = function() {
+    // 1. 現在のURLからクエリパラメータを取得
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // 2. 'company'というキーのパラメータ値を取得
+    const companyName = urlParams.get('company');
+
+    // 3. パラメータ値が存在する場合のみ処理を実行
+    if (companyName) {
+        // 4. idが'company_name'のinput要素を取得
+        const companyInput = document.getElementById('company_name');
+
+        // 5. 取得した要素のvalueにパラメータ値を設定
+        companyInput.value = companyName;
+    }
+};
+	  </script>
+  
+  </body>
 </html>
